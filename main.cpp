@@ -1,12 +1,5 @@
-#include "person.cpp"
-#include "customer.cpp"
-#include "member.cpp"
-#include "premiumMember.cpp"
-#include "employee.cpp"
-#include "trainer.cpp"
-#include "cashier.cpp"
-#include "gym.cpp"
-#include "ConsoleUi.cpp"
+#include "ConsoleUi.h"
+#include "gym.h"
 #include <ios>
 #include <limits>
 using namespace std;

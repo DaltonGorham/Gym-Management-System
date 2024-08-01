@@ -34,8 +34,7 @@ void Console:: addCashierFromUser(Gym& gym) {
 
   gym.addCashier(name, phoneNumber, age, hourlyRate, hoursWorked);
   cout << "Cashier Added" << endl;
-  cout << "Press Enter to Continue." << endl;
-  cin.get();
+  bufferInput();
   clearScreen();
 }
 
@@ -58,8 +57,7 @@ void Console:: addTrainerFromUser(Gym& gym) {
 
   gym.addTrainer(name, phoneNumber, age, experience);
   cout << "Trainer Added." << endl;
-  cout << "Press Enter to Continue." << endl;
-  cin.get();
+  bufferInput();
   clearScreen();
 }
 
@@ -83,8 +81,7 @@ void Console::addPremiumMemberFromUser(Gym& gym) {
 
   gym.addPremiumMember(name, phoneNumber, age, PREMIUM_FEE, TRAINING_FEE);
   cout << "Premium Member Added." << endl;
-  cout << "Press Enter to Continue." << endl;
-  cin.get();
+  bufferInput();
   clearScreen();
 }
 
@@ -107,8 +104,7 @@ void Console::addMemberFromUser(Gym& gym){
 
   gym.addMember(name,phoneNumber,age,MEMBER_FEE);
   cout << "Member Added." << endl;
-  cout << "Press Enter to Continue." << endl;
-  cin.get();
+  bufferInput();
   clearScreen();
 }
 
@@ -119,14 +115,14 @@ void Console::addMemberFromUser(Gym& gym){
   if (gym.getEmployees().size() != 0){
     for (Employee* employee : gym.getEmployees()){
       employee->display();
+      cout << endl;
     }
   }
   else {
     clearScreen();
     cout << "No Employees On File." << endl;
   }
-  cout << "Press Enter To Continue." << endl;
-  cin.get();
+  bufferInput();
   clearScreen();
  }
 
@@ -143,8 +139,7 @@ void Console:: displayCustomers(Gym& gym){
     clearScreen();
     cout << "No Customers On File." << endl;
   }
-  cout << "Press Enter To Continue." << endl;
-  cin.get();
+  bufferInput();
   clearScreen();
 }
 
@@ -153,3 +148,7 @@ void Console::displayIntro(){
   cout << "*****GYM MANAGMENT SYSTEM*****\n\n\n";
 }
 
+void Console::bufferInput(){
+  cout << "Press Enter To Continue." << endl;
+  cin.get();
+}

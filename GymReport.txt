@@ -1,12 +1,13 @@
+**MONTHLY GYM REPORT**
+
 CUSTOMERS
-asdf, Membership Status: Member
-dalton, Membership Status: Premium Member
-Dalton, Membership Status: Premium Member
-asdfasdf, Membership Status: Member
-Total Customers: 4
+John Doe, Membership Status: Member
+Total Customers: 1
 
 EMPLOYEES: 
-Total Employees: 0
+Bambi: $1500
+Dalton: $594
+Total Employees: 2
 
-Total Gross Revenue: $140
-Total Net Revenue: $140
+Total Gross Revenue: $25
+Total Net Revenue: $-2069

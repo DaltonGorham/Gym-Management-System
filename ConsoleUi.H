@@ -13,6 +13,7 @@ class Console : public Gym{
     void addCashierFromUser(Gym& gym);
     void clearScreen() {cout << "\033[2J\033[1;1H";}
     void displayIntro();
+    void bufferInput();
 };
 
 

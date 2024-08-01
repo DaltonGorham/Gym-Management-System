@@ -65,6 +65,7 @@ double Gym::calcNetRevenue(){
 
  void Gym::saveToFile(string fileName){
   ofstream outputFile(fileName);
+  outputFile << "**MONTHLY GYM REPORT**\n\n";
   outputFile << "CUSTOMERS" << endl;
   for (Customer* & customer : customers){
     outputFile << customer->getName() << ", Membership Status: ";
@@ -90,7 +91,7 @@ double Gym::calcNetRevenue(){
 
   outputFile << "Total Gross Revenue: " << "$" << grossRevenue << endl;
   outputFile << "Total Net Revenue: " << "$" << calcNetRevenue() << endl;
-
+  cout << "Information Saved To File." << endl;
   outputFile.close();
  }
 
