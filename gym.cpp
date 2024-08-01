@@ -37,17 +37,6 @@ void Gym::addCashier(string name, string number, int a, double wage,int hoursWor
   employees.push_back(new Cashier(name,number,a,wage,hoursWorked));
 }
 
-void Gym:: displayCustomers(){
-  for (Customer* & customer : customers){
-    customer->display();
-  }
-}
-
-void Gym::displayEmployees(){
-  for (Employee* & employee : employees){
-    employee->display();
-  }
-}
 
 
 
@@ -70,9 +59,9 @@ double Gym::calcNetRevenue(){
  void Gym:: displayRevenue(){
   cout << "Total Gross Revenue: " << "$" << grossRevenue << endl;
   cout << "Total Net Revenue: " << "$" << calcNetRevenue() << endl;
+  cout << "Press Enter To Continue." << endl;
+  cin.get();
  }
-
-
 
  void Gym::saveToFile(string fileName){
   ofstream outputFile(fileName);
@@ -105,73 +94,9 @@ double Gym::calcNetRevenue(){
   outputFile.close();
  }
 
-void Gym::addMemberFromUser(Gym& gym){
-  string name, phoneNumber;
-  int age;
-  
-
-  cout << "Enter Member's Name: ";
-  getline(cin,name);
-  cout << "Enter Member's Phone Number: ";
-  getline(cin,phoneNumber);
-  cout << "Enter Member's Age: ";
-  cin >> age;
-  cin.ignore();
-
-  gym.addMember(name,phoneNumber,age,MEMBER_FEE);
-
-}
-
-void Gym::addPremiumMemberFromUser(Gym& gym) {
-  string name, phoneNumber;
-  int age;
-
-  cout << "Enter premium member's name: ";
-  cin >> ws;
-  getline(cin, name);
-  cout << "Enter premium member's phone number: ";
-  getline(cin, phoneNumber);
-  cout << "Enter premium member's age: ";
-  cin >> age;
-
-  gym.addPremiumMember(name, phoneNumber, age, PREMIUM_FEE, TRAINING_FEE);
-}
-
-void Gym:: addTrainerFromUser(Gym& gym) {
-  string name, phoneNumber;
-  int age, experience;
-
-  cout << "Enter trainer's name: ";
-  cin >> ws;
-  getline(cin, name);
-  cout << "Enter trainer's phone number: ";
-  getline(cin, phoneNumber);
-  cout << "Enter trainer's age: ";
-  cin >> age;
-  cout << "Enter trainer's years of experience: ";
-  cin >> experience;
-
-  gym.addTrainer(name, phoneNumber, age, experience);
-}
+ 
 
 
-void Gym:: addCashierFromUser(Gym& gym) {
-  string name, phoneNumber;
-  int age;
-  double hourlyRate;
-  int hoursWorked;
 
-  cout << "Enter cashier's name: ";
-  cin >> ws;
-  getline(cin, name);
-  cout << "Enter cashier's phone number: ";
-  getline(cin, phoneNumber);
-  cout << "Enter cashier's age: ";
-  cin >> age;
-  cout << "Enter cashier's hourly rate: ";
-  cin >> hourlyRate;
-  cout << "Enter cashier's hours worked per week: ";
-  cin >> hoursWorked;
 
-  gym.addCashier(name, phoneNumber, age, hourlyRate, hoursWorked);
-}
+

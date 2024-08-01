@@ -7,12 +7,21 @@
       "args": [
         "-fdiagnostics-color=always",
         "-g",
-        "${file}",
+        "${workspaceFolder}/cashier.cpp",
+        "${workspaceFolder}/ConsoleUi.cpp",
+        "${workspaceFolder}/customer.cpp",
+        "${workspaceFolder}/employee.cpp",
+        "${workspaceFolder}/gym.cpp",
+        "${workspaceFolder}/main.cpp",
+        "${workspaceFolder}/member.cpp",
+        "${workspaceFolder}/person.cpp",
+        "${workspaceFolder}/premiumMember.cpp",
+        "${workspaceFolder}/trainer.cpp",
         "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        "${workspaceFolder}\\${fileBasenameNoExtension}.exe"
       ],
       "options": {
-        "cwd": "${fileDirname}"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": [
         "$gcc"

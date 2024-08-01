@@ -1,16 +1,12 @@
 CUSTOMERS
-dalton, Membership Status: Member
-dalton, Membership Status: Member
-dalton, Membership Status: Member
-dalton, Membership Status: Member
-dalton, Membership Status: Member
-kiley, Membership Status: Premium Member
-Total Customers: 6
+asdf, Membership Status: Member
+dalton, Membership Status: Premium Member
+Dalton, Membership Status: Premium Member
+asdfasdf, Membership Status: Member
+Total Customers: 4
 
 EMPLOYEES: 
-pat: $1125
-Riley: $1600
-Total Employees: 2
+Total Employees: 0
 
-Total Gross Revenue: $170
-Total Net Revenue: $-2555
+Total Gross Revenue: $140
+Total Net Revenue: $140

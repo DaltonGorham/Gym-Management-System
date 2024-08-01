@@ -6,7 +6,7 @@
 
 
 class Gym{
-  private:
+  protected:
     vector<Customer*> customers;
     vector<Employee*> employees;
     double grossRevenue;
@@ -23,12 +23,9 @@ class Gym{
     void addCashier(string name, string number, int a, double wage,int hours);
     double calcNetRevenue();
     void displayRevenue();
-    void displayCustomers();
-    void displayEmployees();
     void saveToFile(string fileName);
-    void addMemberFromUser(Gym& gym);
-    void addPremiumMemberFromUser(Gym& gym);
-    void addTrainerFromUser(Gym& gym);
+    vector<Customer*> getCustomers()const {return customers;};
+    vector<Employee*> getEmployees()const {return employees;};
 };
 
 

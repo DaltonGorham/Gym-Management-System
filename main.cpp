@@ -6,28 +6,47 @@
 #include "trainer.cpp"
 #include "cashier.cpp"
 #include "gym.cpp"
+#include "ConsoleUi.cpp"
+#include <ios>
+#include <limits>
 using namespace std;
 int main(){
-  
+  Console ui;
   Gym gym;
 
-  gym.addMember("dalton", "501-887-6029", 21, 25);
-  gym.addMember("dalton", "501-887-6029", 21, 25);
-  gym.addMember("dalton", "501-887-6029", 21, 25);
-  gym.addMember("dalton", "501-887-6029", 21, 25);
-  gym.addMember("dalton", "501-887-6029", 21, 25);
-  gym.addPremiumMember("kiley", "501-556-4999", 21, 35, 10);
-  gym.addCashier("pat", "501-227-8897", 22, 11.25, 100);
-  gym.addTrainer("Riley", "501-206-2755", 33, 4);
+  int choice;
 
-  gym.displayRevenue();
-  cout << endl;
+  ui.displayIntro();
 
-  gym.displayCustomers();
-  cout << endl;
-  gym.displayEmployees();
+  do {
+    cout << "1: Add Member\n";
+    cout << "2: Add Premium Member\n";
+    cout << "3: Add Trainer\n";
+    cout << "4: Add Cashier\n";
+    cout << "5: Display Customer List\n";
+    cout << "6: Diplay Employee List\n";
+    cout << "7: Display Revenue\n";
+    cout << "8: Save Info To File\n";
+    cout << "9: Exit\n";
+    cin >> choice;
 
-  gym.saveToFile("GymReport.txt");
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+
+    switch(choice){
+      case 1: ui.addMemberFromUser(gym); break;
+      case 2: ui.addPremiumMemberFromUser(gym); break;
+      case 3: ui.addTrainerFromUser(gym); break;
+      case 4: ui.addCashierFromUser(gym); break;
+      case 5: ui.displayCustomers(gym); break;
+      case 6: ui.displayEmployees(gym); break;
+      case 7: gym.displayRevenue(); break;
+      case 8: gym.saveToFile("GymReport.txt");
+      case 9: "Qutting..."; break;
+      default: "Invalid Option. Choose 1-9.";
+
+    }
+  } while(choice != 9);
   
   
 
