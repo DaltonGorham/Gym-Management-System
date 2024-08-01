@@ -10,7 +10,6 @@ Member::Member(string n, string number, int a, double subFee) : Customer(n, numb
 void Member::display(){
   cout << "Member: ";
   Person::display(); 
-  cout << endl;
-  cout << "Subscription Fee: $" << subscriptionFee << endl;
+  cout << ", Subscription Fee: $" << subscriptionFee << endl;
 }
 

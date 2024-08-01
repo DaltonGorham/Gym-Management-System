@@ -1,4 +1,5 @@
 #include "person.h"
+#include <iomanip>
 using namespace std;
 
 
@@ -8,8 +9,7 @@ Person::Person(string n, string number, int a) : name(n), phoneNumber(number), a
 
 
 void Person::display(){
-  cout << "Name: " << name << ", Number: " << phoneNumber << ", Age: " << age;
+  cout << "Name: " << name << ", Cell: " << phoneNumber << ", Age: " << age;
 }
-
 
 

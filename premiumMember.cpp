@@ -2,12 +2,12 @@
 using namespace std;
 
 
-PremiumMember::PremiumMember(string n, string number, int a, double subFee, double trainFee) : Member(n,number,a,subFee), trainerFee(trainFee){}
+PremiumMember::PremiumMember(string n, string number, int a, double subFee,double trainFee) : Member(n,number,a,subFee),  trainerFee(trainFee){}
 
 
 
 double PremiumMember::getSubscriptionFee(){
-  return Member::getSubscriptionFee() + trainerFee;
+  return Member::getSubscriptionFee();
 }
 
 void PremiumMember::display(){
@@ -15,3 +15,4 @@ void PremiumMember::display(){
   Member::display();
   cout << "Trainer Fee: $" << trainerFee;
 }
+

@@ -6,7 +6,7 @@
 class Customer : public Person{
   public:
   Customer(string n, string number, int a);
-   virtual double getTrainerFee() {return 0;};
+   virtual double getTrainerFee() {return 0;}
 };
 
 
