@@ -13,7 +13,7 @@ class Gym{
     double cashierWages;
     const double MEMBER_FEE = 25.00;
     const double PREMIUM_FEE = 35.00;
-    const double TRAINING_FEE = 10.00;
+    double TRAINING_FEE = 10.00;
   public:
     Gym();
     ~Gym();

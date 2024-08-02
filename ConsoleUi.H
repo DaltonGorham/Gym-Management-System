@@ -2,7 +2,7 @@
 #define ConsoleUI_H
 #include "gym.h"
 
-
+// class to handle all inputs and outputs
 class Console : public Gym{
   public:
     void displayCustomers(Gym& gym);

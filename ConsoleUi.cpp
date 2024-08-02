@@ -6,6 +6,11 @@
 #include <fstream>
 
 
+/*
+The console class's member functions get all the information from the user and then use the gym class's 
+functions to add it to either the customer or employee vectors inside the gym class. 
+*/
+
 void Console:: addCashierFromUser(Gym& gym) {
   string name, phoneNumber;
   int age;
@@ -64,6 +69,8 @@ void Console:: addTrainerFromUser(Gym& gym) {
 void Console::addPremiumMemberFromUser(Gym& gym) {
   string name, phoneNumber;
   int age;
+  char answer;
+  double fee;
 
   cout << "Enter premium member's name: ";
   getline(cin, name);
@@ -76,10 +83,22 @@ void Console::addPremiumMemberFromUser(Gym& gym) {
   cout << "Enter premium member's age: ";
   cin >> age;
   cin.ignore();
+
+  cout << "Does " << name << " want a trainer for an additonal $" << TRAINING_FEE << "? (Y/N)" << endl;
+  cin >> answer;
+  cin.ignore();
+
+  if (answer == 'y' || answer == 'Y'){
+    fee = TRAINING_FEE;
+  }
+  else{
+    fee = 0.0;
+  }
+
   
 
 
-  gym.addPremiumMember(name, phoneNumber, age, PREMIUM_FEE, TRAINING_FEE);
+  gym.addPremiumMember(name, phoneNumber, age, PREMIUM_FEE, fee);
   cout << "Premium Member Added." << endl;
   bufferInput();
   clearScreen();

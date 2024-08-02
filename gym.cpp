@@ -8,6 +8,7 @@
 
 Gym::Gym() : grossRevenue(0){}
 
+
 Gym::~Gym() {
   for (Customer* & customer : customers){
     delete customer;
@@ -17,6 +18,11 @@ Gym::~Gym() {
     delete employee;
   }
 }
+
+/*
+The add functions push back a new customer or employee object inside their respective vectors
+and keeps track of the revenue that gym earns from fees.
+*/
 
 void Gym::addMember(string name, string number, int a, double subFee){
   customers.push_back(new Member(name,number,a,subFee));
@@ -63,6 +69,11 @@ double Gym::calcNetRevenue(){
   cin.get();
  }
 
+
+/*
+An optional function that will save the all information that the user entered into a file,
+that shows all the details of the monthly gym report.
+*/
  void Gym::saveToFile(string fileName){
   ofstream outputFile(fileName);
   outputFile << "**MONTHLY GYM REPORT**\n\n";

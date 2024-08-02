@@ -1,13 +1,17 @@
 **MONTHLY GYM REPORT**
 
 CUSTOMERS
-John Doe, Membership Status: Member
-Total Customers: 1
+Drake, Membership Status: Member
+Bro, Membership Status: Premium Member
+Tristin, Membership Status: Premium Member
+Grey, Membership Status: Premium Member
+Tony Stark, Membership Status: Premium Member
+Hulk, Membership Status: Member
+Total Customers: 6
 
 EMPLOYEES: 
-Bambi: $1500
-Dalton: $594
-Total Employees: 2
+Logan: $220
+Total Employees: 1
 
-Total Gross Revenue: $25
-Total Net Revenue: $-2069
+Total Gross Revenue: $220
+Total Net Revenue: $0

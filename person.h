@@ -2,7 +2,7 @@
 #define Person_H
 #include <iostream>
 using namespace std;
-
+//  Base class
 class Person{
   protected:
     string name;
