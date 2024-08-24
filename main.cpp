@@ -1,4 +1,4 @@
-#include "ConsoleUi.h"
+#include "ConsoleUi.H"
 #include "gym.h"
 #include <ios>
 #include <limits>
@@ -35,7 +35,7 @@ int main(){
       case 6: ui.displayEmployees(gym); break;
       case 7: gym.displayRevenue(); break;
       case 8: gym.saveToFile("GymReport.txt");
-      case 9: "Qutting..."; break;
+      case 9: break;
       default: "Invalid Option. Choose 1-9.";
 
     }
