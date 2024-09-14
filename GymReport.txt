@@ -1,17 +1,42 @@
 **MONTHLY GYM REPORT**
 
 CUSTOMERS
-Drake, Membership Status: Member
-Bro, Membership Status: Premium Member
-Tristin, Membership Status: Premium Member
-Grey, Membership Status: Premium Member
-Tony Stark, Membership Status: Premium Member
-Hulk, Membership Status: Member
-Total Customers: 6
+Alice Johnson, Membership Status: Premium Member
+Bob Smith, Membership Status: Member
+Carol White, Membership Status: Premium Member
+David Brown, Membership Status: Member
+Emma Green, Membership Status: Premium Member
+Frank Black, Membership Status: Member
+Grace Lee, Membership Status: Premium Member
+Hank Morgan, Membership Status: Member
+Ivy Parker, Membership Status: Premium Member
+Jack Wilson, Membership Status: Member
+Kelly Davis, Membership Status: Premium Member
+Liam Roberts, Membership Status: Member
+Mia Clark, Membership Status: Premium Member
+Noah Scott, Membership Status: Member
+Olivia Turner, Membership Status: Premium Member
+Paul Harris, Membership Status: Member
+Quinn Mitchell, Membership Status: Premium Member
+Rachel Adams, Membership Status: Member
+Sam Nelson, Membership Status: Premium Member
+Tina Carter, Membership Status: Member
+Ulysses Moore, Membership Status: Premium Member
+Victoria Thompson, Membership Status: Member
+Will Harris, Membership Status: Premium Member
+Xander Hall, Membership Status: Member
+Yara King, Membership Status: Premium Member
+Zane Lewis, Membership Status: Member
+Amy Collins, Membership Status: Premium Member
+Brian Walker, Membership Status: Member
+Chloe King, Membership Status: Premium Member
+Daniel Evans, Membership Status: Member
+Ella Ramirez, Membership Status: Premium MemberTotal Customers: 30
 
 EMPLOYEES: 
-Logan: $220
-Total Employees: 1
+James Lee: $450
+Sarah Clark: $350
+Total Employees: 2
 
-Total Gross Revenue: $220
+Total Gross Revenue: $2000
 Total Net Revenue: $0
